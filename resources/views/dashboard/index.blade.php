@@ -1,24 +1,7 @@
-<htmL>
-<table class="table" border="1">
-    <thead>
-        <tr>
-            <th>nama</th>
-            <th>email</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach ($users as $item)
-            <tr>
-                <td>{{ $item->name }}</td>
-                <td>{{ $item->email }}</td>
-            </tr>
-        @endforeach
-    </tbody>
-</table>
+@extends('layouts.app')
 
-<hr>
-<br><br>
-{{ $user->name }}
-{{ $user->email }}
+@section('content')
+    <h1>Dashboardddd</h1>
+@endsection
 
-</htmL>
+

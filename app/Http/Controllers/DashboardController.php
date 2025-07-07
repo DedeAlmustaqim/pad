@@ -12,15 +12,11 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        $users =  DB::table('users')->get();
-        $user = DB::table('users')->where('id', 5)->first();
         $data = [
-            'title' => 'ini titile Dashboard',
-            'users' => $users,
-            'user' => $user
+            'title' => 'Dashboard',
         ];
         return view('dashboard.index', $data);
     }
 
-  
+    public function insert(){}
 }
