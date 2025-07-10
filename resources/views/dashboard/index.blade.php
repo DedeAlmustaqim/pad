@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Dashboardddd</h1>
+    {{ session('name') }}
+    {{ session('email') }}
+    {{ session('role') }}
 @endsection
-
-
